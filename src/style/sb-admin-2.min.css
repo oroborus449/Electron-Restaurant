@@ -9972,8 +9972,8 @@ a:focus {
 }
 
 .bg-gradient-primary {
-	background-color: #4e73df;
-	background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+	background-color: #fd7e14;
+	background-image: linear-gradient(180deg, #fd7e14 10%, #be8722 100%);
 	background-size: cover
 }
 
@@ -10567,11 +10567,11 @@ a:focus {
 		width: 14rem
 	}
 	.sidebar .nav-item .nav-link i {
-		font-size: .85rem;
+		font-size: 2rem;
 		margin-right: .25rem
 	}
 	.sidebar .nav-item .nav-link span {
-		font-size: .85rem;
+		font-size: 1rem;
 		display: inline
 	}
 	.sidebar .nav-item .nav-link[data-toggle=collapse]::after {

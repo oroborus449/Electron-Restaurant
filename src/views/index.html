@@ -17,7 +17,7 @@
   <!-- Custom styles for this template-->
   <link href="../style/sb-admin-2.min.css" rel="stylesheet">
 
-
+  <link rel="stylesheet" href="../style/cs.css">
 </head>
 
 <body id="page-top">
@@ -39,7 +39,7 @@
       <hr class="sidebar-divider my-0">
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-        <a class="nav-link" href="index2.html">
+        <a class="nav-link" href="index.html">
           <i class="fas fa-fw fa-cash-register"></i>
           <span>Ventas</span></a>
       </li>
@@ -81,9 +81,89 @@
 
     </ul>
     <!-- End of Sidebar -->
-    <div>
-      <iframe src="Ventas.html" frameborder="0" height="100%" width="100%" id="content"></iframe>
-    </div>
+      <div class="container-fluid">
+        <div class="card shadow mb-4">
+            <div class="card-header py-3" style="background: #fd7d14cb 50%;">
+              <h6 class="m-0 font-weight-bold text-white text-center">Ventas</h6>
+            </div>
+
+            <div class="card-body ">
+              <div class="row"> 
+                 <!-- Search form -->
+                <form class="form-inline active-pink active-pink-3 container-fluid">
+                  <i class="fas fa-search" id="icon" aria-hidden="true"></i>
+                  <input class="form-control form-control-sm ml-2 w-50" type="text" placeholder="Buscar"
+                    aria-label="Search">
+
+                    <!--Number of sell--> 
+                    <div id="NumDeCompra" class="col font-weight-bold text-right form-inline mx-auto ">
+                    <label for="NumDeCrompra">Numero de Compra:</label>
+                    <label for="" id="showNumCompra" class="font-weight-bold text-center text-primary  ">0</label>
+                    </div>
+                <!--End Number of sell-->  
+                </form>
+                <!--End search form-->
+              </div>
+              <br>
+              <div class="row">
+                  <div class="col col-lg-9">
+                  <div class="container">
+                    <table class="table table-bordered table-striped" >
+                      <thead>
+                        <tr>
+                          <th>Codigo</th>
+                          <th>Productos</th>
+                          <th>Cantidad</th>
+                          <th>Precio</th>
+                          <th>Sub Total</th>
+                        </tr>
+                      </thead>
+                      <tbody id="myTable">
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td ></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                    
+                      
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="col container-fluid">
+
+                
+                  <div id="NumDeProductos" class="col font-weight-bold text-center">
+                    <label for="NumDeProductos">N°de Productos:</label>
+                    <br>
+                    <label for="" id="showNumProductos" class="font-weight-bold text-center text-primary border border-primary">0</label>
+                  </div>
+                <div id="total" class="col text-center">
+                    <label for="total" class="font-weight-bold text-center " style="font-size: x-large;">Total:</label>
+                    <div id="showTotal">
+                      <label for="" class="font-weight-bold text-center">$ 00.00</label>
+                    </div> 
+                </div>
+              
+                
+
+                <div class="group-vertical">
+                  <button type="submit" class="btn btn-danger btn-lg btn-block">Cobrar</button>
+                <button type="submit" class="btn btn-warning btn-lg btn-block">Devolver</button>
+                <button type="submit" class="btn btn-success btn-lg btn-block">Facturar</button>
+                </div>
+              </div>
+            
+
+              </div>
+              
+           
+            </div>
+            
+            
+          </div>
 
   </div>
   <!-- End of Page Wrapper -->
@@ -93,6 +173,12 @@
   <script src="../scripts/jquery.min.js"></script>
   <!-- Custom scripts for all pages-->
   <script src="../scripts/sb-admin-2.min.js"></script>
+
+  <!--Scripts for datatable-->
+  <script src="../scripts/jquery.dataTables.min.js"></script>
+  <script src="../scripts/dataTables.bootstrap4.min.js"></script>
+  <script src="../scripts/datatables-demo.js"></script>
+
 
 </body>
 
